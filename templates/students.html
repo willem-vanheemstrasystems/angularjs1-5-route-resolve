@@ -1,0 +1,14 @@
+<h1>Students:</h1>
+
+Name : <input type="text" data-ng-model="ctrl.name" />
+<button data-ng-click="ctrl.searchStudent()">Search</button>
+<br /><br />
+<ul>
+    <li data-ng-repeat="student in ctrl.students">
+        <a href="#students/{{ student.id }}">
+            {{ student.name }}
+        </a>
+    </li>
+</ul>
+
+<button data-ng-click="ctrl.reloadData()">Reload Data</button>

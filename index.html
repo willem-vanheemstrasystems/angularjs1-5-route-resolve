@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <title>My Angular App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<table style="font-family:Arial">
+    <tr>
+        <td colspan="2" class="header">
+            <h1>
+                WebSite Header
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td class="leftMenu">
+            <a href="#/home">Home</a>
+            <a href="#/courses">Courses</a>
+            <a href="#/students">Students</a>
+        </td>
+        <td class="mainContent">
+            <data-ng-view></data-ng-view>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="footer">
+            <b>WebSite Footer</b>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
